@@ -1,5 +1,7 @@
-node {
+pipeline {
+  agent any
     def mvnHome
+    stages {
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
         git 'https://github.com/codecentric/TDDTrainingApplication.git'
@@ -37,5 +39,6 @@ node {
     stage('Results') {
         junit '**/target/surefire-reports/TEST-*.xml'
         archive 'target/*.jar'
+    }
     }
 }
