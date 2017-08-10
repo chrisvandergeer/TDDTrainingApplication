@@ -93,7 +93,4 @@ public class TriangleCalculatorServiceDevelopmentBean implements TriangleCalcula
             throw new IncorrectTriangleSidesException("The sum of two triangle side cannot be the sum of the third triangle side.");
         }
     }
-
-
-
 }

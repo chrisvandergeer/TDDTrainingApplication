@@ -12,6 +12,7 @@
 
     <body>
         <h2>TDD Training application</h2>
+        <h3>Modified by Chris</h3>
         <form:form method="post" action="${pageContext.request.contextPath}/triangle/calculate" commandName="triangleForm">
 
             <div>
